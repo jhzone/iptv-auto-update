@@ -41,8 +41,9 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git clone --depth=1 https://x-access-token:${IPTV_TOKEN}@github.com/jhzone/TVbox.git /tmp/tvbox-iptv
           cp output/result.txt /tmp/tvbox-iptv/result.txt
+          cp output/result.m3u /tmp/tvbox-iptv/result.m3u
           cd /tmp/tvbox-iptv
-          git add result.txt
+          git add result.txt result.m3u
           if ! git diff --cached --quiet; then
             git commit -m "📺 Update IPTV result from iptv-org ($(date +'%Y-%m-%d'))"
             git push https://x-access-token:${IPTV_TOKEN}@github.com/jhzone/TVbox.git main
