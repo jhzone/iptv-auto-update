@@ -37,8 +37,8 @@ jobs:
 
       - name: Push to TVbox repo
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
           git clone --depth=1 https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/jhzone/TVbox.git /tmp/tvbox-iptv
           cp output/result.txt /tmp/tvbox-iptv/lib/result.txt
           cp output/result.m3u /tmp/tvbox-iptv/lib/result.m3u
