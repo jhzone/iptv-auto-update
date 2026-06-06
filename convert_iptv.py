@@ -142,6 +142,8 @@ def write_m3u(categorized: dict, output_file: str):
 
 
 def main():
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    
     print(f"[{datetime.utcnow().isoformat()}] 开始下载 iptv-org cn.m3u...")
     try:
         m3u_text = download_m3u(IPTV_ORG_URL)
