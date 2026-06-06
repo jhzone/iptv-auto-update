@@ -1,0 +1,48 @@
+# 每天自动获取 iptv-org 中国频道，转换成 IPTV-API result.txt 格式
+
+name: IPTV Daily Update
+
+on:
+  schedule:
+    # 每天北京时间 08:00 (UTC 00:00)
+    - cron: '0 0 * * *'
+  workflow_dispatch:  # 支持手动触发
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run IPTV converter
+        run: python3 convert_iptv.py
+
+      - name: Upload results as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: iptv-results
+          path: |
+            output/result.txt
+            output/result.m3u
+          retention-days: 30
+
+      - name: Commit and push if changed
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add output/result.txt output/result.m3u
+          if ! git diff --cached --quiet; then
+            git commit -m "📺 Daily IPTV update $(date +'%Y-%m-%d')"
+            git push
+          else
+            echo "No changes to commit"
+          fi
