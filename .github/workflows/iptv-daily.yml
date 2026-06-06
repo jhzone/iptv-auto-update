@@ -35,6 +35,24 @@ jobs:
             output/result.m3u
           retention-days: 30
 
+      - name: Push to TVbox repo
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git clone --depth=1 https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/jhzone/TVbox.git /tmp/tvbox-iptv
+          cp output/result.txt /tmp/tvbox-iptv/lib/result.txt
+          cp output/result.m3u /tmp/tvbox-iptv/lib/result.m3u
+          cd /tmp/tvbox-iptv
+          git add lib/result.txt lib/result.m3u
+          if ! git diff --cached --quiet; then
+            git commit -m "📺 Update IPTV result from iptv-org ($(date +'%Y-%m-%d'))"
+            git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/jhzone/TVbox.git main
+          else
+            echo "No changes in TVbox repo"
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Commit and push if changed
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
