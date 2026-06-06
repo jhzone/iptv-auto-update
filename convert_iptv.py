@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 """
-iptv-org 中国频道 -> IPTV-API result.txt 格式转换脚本
-每天自动从 iptv-org/iptv 拉取 cn.m3u，转成 #genre# 分类格式
+IPTV 自动更新脚本
+每天自动从 iptv-org/iptv 和 iptv.mzone.dpdns.org/abc123 拉取频道，
+转成 IPTV-API result.txt 格式
 """
 
 import os
 import sys
+import re
 import http.client
 from datetime import datetime
 from urllib.parse import unquote
@@ -74,13 +76,11 @@ def parse_m3u(text: str) -> list:
     for line in text.split("\n"):
         line = line.strip()
         if line.startswith("#EXTINF"):
-            # 提取频道名（最后一个逗号后面的内容）
             if "," in line:
                 current_name = line.split(",")[-1].strip()
             else:
                 current_name = "Unknown"
         elif line and not line.startswith("#") and current_name:
-            # 清理频道名
             clean_name = current_name.replace(" [Not 24/7]", "").strip()
             channels.append((clean_name, line))
             current_name = ""
@@ -88,11 +88,10 @@ def parse_m3u(text: str) -> list:
 
 
 def categorize(channels: list) -> dict:
-    """将频道分类"""
+    """将频道按规则分类"""
     categorized = {}
     assigned = set()
 
-    # 先按规则分类
     for cat_name, keywords in CATEGORIES.items():
         cat_channels = []
         for name, url in channels:
@@ -101,7 +100,6 @@ def categorize(channels: list) -> dict:
                 assigned.add(name)
         categorized[cat_name] = cat_channels
 
-    # 剩余未分类的放到"其他"
     remaining = [(n, u) for n, u in channels if n not in assigned]
     if remaining:
         categorized["📺其他频道"] = remaining
@@ -109,7 +107,44 @@ def categorize(channels: list) -> dict:
     return categorized
 
 
-def write_result(categorized: dict, output_file: str):
+def fetch_abc123() -> dict:
+    """从 abc123 拉取 M3U 数据，转成 {分类: [(频道名, URL)]}"""
+    url = "https://iptv.mzone.dpdns.org/abc123"
+
+    parsed = url.split("/")
+    domain = parsed[2]
+    path = "/" + "/".join(parsed[3:])
+
+    conn = http.client.HTTPConnection(domain, timeout=60)
+    conn.request("GET", path, headers={"User-Agent": "Mozilla/5.0"})
+    resp = conn.getresponse()
+    body = resp.read()
+    conn.close()
+
+    text = body.decode("utf-8", errors="ignore")
+    lines = text.strip().split("\n")
+
+    channels = {}
+    current_group = "其他"
+    for i, line in enumerate(lines):
+        line = line.strip()
+        if line.startswith("#EXTINF"):
+            g = re.search(r'group-title="([^"]*)"', line)
+            n = re.search(r',([^,]+)$', line)
+            if g:
+                current_group = g.group(1)
+            if n:
+                name = n.group(1).strip()
+                if name:
+                    if current_group not in channels:
+                        channels[current_group] = []
+                    if i + 1 < len(lines):
+                        url_next = lines[i + 1].strip()
+                        channels[current_group].append((name, url_next))
+    return channels
+
+
+def write_result(categorized: dict, output_file: str, abc_channels: dict = None):
     """写入 result.txt 格式"""
     now = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
 
@@ -124,7 +159,19 @@ def write_result(categorized: dict, output_file: str):
                 f.write(f"{name},{url}\n")
             f.write("\n")
 
-    return len([c for ch in categorized.values() for c in ch])
+        # 追加 abc123 数据
+        if abc_channels:
+            f.write("# === IPTV.MZONE.DPDNS.ORG/ABC123 SOURCE ===\n")
+            for cat_name, channels in abc_channels.items():
+                f.write(f"{cat_name},#genre#\n")
+                for name, url in channels:
+                    f.write(f"{name},{url}\n")
+                f.write("\n")
+
+    total = len([c for ch in categorized.values() for c in ch])
+    if abc_channels:
+        total += len([c for ch in abc_channels.values() for c in ch])
+    return total
 
 
 def write_m3u(categorized: dict, output_file: str):
@@ -135,7 +182,6 @@ def write_m3u(categorized: dict, output_file: str):
         for cat_name, channels in categorized.items():
             f.write(f"\n# Group: {cat_name}\n")
             for name, url in channels:
-                # 尝试从名称提取 tvg-id
                 tvg_id = name.split("(")[0].strip().replace(" ", "")
                 f.write(f'#EXTINF:-1 tvg-name="{name}" tvg-id="{tvg_id}",{name}\n')
                 f.write(f"{url}\n")
@@ -143,7 +189,8 @@ def write_m3u(categorized: dict, output_file: str):
 
 def main():
     os.makedirs(OUTPUT_DIR, exist_ok=True)
-    
+
+    # 1. 拉取 iptv-org
     print(f"[{datetime.utcnow().isoformat()}] 开始下载 iptv-org cn.m3u...")
     try:
         m3u_text = download_m3u(IPTV_ORG_URL)
@@ -159,13 +206,31 @@ def main():
         sys.exit(1)
 
     categorized = categorize(channels)
-    total = write_result(categorized, OUTPUT_FILE)
+
+    # 2. 拉取 abc123
+    print(f"\n[{datetime.utcnow().isoformat()}] 开始下载 abc123...")
+    try:
+        abc_channels = fetch_abc123()
+        abc_total = sum(len(chs) for chs in abc_channels.values())
+        print(f"✓ abc123 解析到 {abc_total} 个频道")
+    except Exception as e:
+        print(f"❌ abc123 下载失败: {e}")
+        abc_channels = None
+        abc_total = 0
+
+    # 3. 写入结果
+    total = write_result(categorized, OUTPUT_FILE, abc_channels)
     write_m3u(categorized, M3U_OUTPUT)
 
-    # 统计每个分类的频道数
+    # 4. 统计
     print(f"\n✅ 转换完成! 共 {total} 个频道:")
     for cat, chs in categorized.items():
         print(f"  {cat}: {len(chs)}")
+    if abc_channels and abc_total > 0:
+        print(f"\n📺 abc123 源 ({abc_total} 个):")
+        for cat, chs in abc_channels.items():
+            if chs:
+                print(f"  {cat}: {len(chs)}")
 
     print(f"\n输出文件:")
     print(f"  TXT: {OUTPUT_FILE}")
