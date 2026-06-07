@@ -337,8 +337,6 @@ http://video10.qtv.com.cn/drm/qtv4at/manifest.m3u8
 http://video10.qtv.com.cn/drm/qtv5at/manifest.m3u8
 #EXTINF:-1 tvg-name="QTV-6" tvg-id="QTV-6",QTV-6
 http://video10.qtv.com.cn/drm/qtv6at/manifest.m3u8
-#EXTINF:-1 tvg-name="Red Bull TV SD (720p)" tvg-id="RedBullTVSD",Red Bull TV SD (720p)
-https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_3360.m3u8
 #EXTINF:-1 tvg-name="Shanghai Education Television Station" tvg-id="ShanghaiEducationTelevisionStation",Shanghai Education Television Station
 http://223.166.234.114:7777/tsfile/live/1033_1.m3u8
 #EXTINF:-1 tvg-name="Shenzhen Satellite TV (2160p)" tvg-id="ShenzhenSatelliteTV",Shenzhen Satellite TV (2160p)
