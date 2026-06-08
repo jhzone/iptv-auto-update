@@ -451,7 +451,7 @@ Hebei TV (2160p),https://event.pull.hebtv.com:443/live/live101.m3u8
 黑龙江 (576p),http://183.207.248.71/gitv/live1/G_HEILONGJIANG/G_HEILONGJIANG
 黑龙江卫 (1080p),http://183.207.248.71/cntv/live1/HD-2500k-1080P-heilongjiangstv/HD-2500k-1080P-heilongjiangstv
 
-# === IPTV.MZONE.DPDNS.ORG/ABC123 SOURCE ===
+# === IPTV.MZONE.DPDNS.ORG/ABC123 SOURCE =yyyy==
 咪咕央卫,#genre#
 CCTV1,http://45.192.97.170:8880/play/1.m3u8
 CCTV2,http://45.192.97.170:8880/play/2.m3u8
