@@ -33,10 +33,6 @@ http://74.91.26.218:82/live/cctv3hd.m3u8
 http://74.91.26.218:82/live/cctv4hd.m3u8
 #EXTINF:-1 tvg-name="CCTV-4K (1080p)" tvg-id="CCTV-4K",CCTV-4K (1080p)
 http://198.204.240.250:82/live/cctv4k.m3u8
-#EXTINF:-1 tvg-name="CCTV-5 (1080p)" tvg-id="CCTV-5",CCTV-5 (1080p)
-http://192.151.150.154/live/cctv5hd.m3u8
-#EXTINF:-1 tvg-name="CCTV-5+ (720p)" tvg-id="CCTV-5+",CCTV-5+ (720p)
-http://192.151.150.154/live/cctv5p.m3u8
 #EXTINF:-1 tvg-name="CCTV-6 (1080p)" tvg-id="CCTV-6",CCTV-6 (1080p)
 http://198.204.240.250:82/live/cctv6.m3u8
 #EXTINF:-1 tvg-name="CCTV-7 (720p)" tvg-id="CCTV-7",CCTV-7 (720p)
@@ -367,8 +363,6 @@ http://120.70.60.179:9901/tsfile/live/1006_1.m3u8?authid=0&key=txiptv&playlive=1
 http://218.84.35.38:3000/m3u8/live/tctv-2/index.m3u8
 #EXTINF:-1 tvg-name="Xinjiang TV 3" tvg-id="XinjiangTV3",Xinjiang TV 3
 https://st-video.xjmty.com/fs/livedit/e55abfa37af26e19/8ce9971c2177b3dd.m3u8
-#EXTINF:-1 tvg-name="Xinjiang TV 5" tvg-id="XinjiangTV5",Xinjiang TV 5
-http://106.124.91.222:9901/tsfile/live/21216_1.m3u8?authid=0&key=txiptv&playlive=0
 #EXTINF:-1 tvg-name="Xinjiang TV 8" tvg-id="XinjiangTV8",Xinjiang TV 8
 http://120.70.60.179:9901/tsfile/live/1002_1.m3u8?authid=0&key=txiptv&playlive=1
 #EXTINF:-1 tvg-name="Xizang TV Tibetan (720p)" tvg-id="XizangTVTibetan",Xizang TV Tibetan (720p)
@@ -399,8 +393,6 @@ http://33809.hlsplay.aodianyun.com/guangdianyun_33809/tv_channel_170.m3u8
 http://33809.hlsplay.aodianyun.com/guangdianyun_33809/tv_channel_171.m3u8
 #EXTINF:-1 tvg-name="云南 Ⅰ 文山综合台 (1080p)" tvg-id="云南Ⅰ文山综合台",云南 Ⅰ 文山综合台 (1080p)
 http://tvdrs.wsrtv.com.cn:8100/channellive/ch1.flv
-#EXTINF:-1 tvg-name="云南都市 (1080p)" tvg-id="云南都市",云南都市 (1080p)
-http://39.130.202.81:6610/gitv_live/G_YNTV-2-HD/G_YNTV-2-HD.m3u8
 #EXTINF:-1 tvg-name="五星体育 (720p)" tvg-id="五星体育",五星体育 (720p)
 http://223.110.245.147/ott.js.chinamobile.com/PLTV/3/224/3221226799/index.m3u8
 #EXTINF:-1 tvg-name="亚太台 (480p)" tvg-id="亚太台",亚太台 (480p)
