@@ -1,5 +1,5 @@
 # 更新时间,#genre#
-2026-06-08 11:47:26,https://iptv.catvod.com/catvod?id=CCTV1%E7%BB%BC%E5%90%88&line=1
+2026-06-09 00:10:19,https://iptv.catvod.com/catvod?id=CCTV1%E7%BB%BC%E5%90%88&line=1
 
 📺央视频道,#genre#
 CCTV-10 (576i),https://cdn4.skygo.mn/live/disk1/CCTV-10/HLSv3-FTA/CCTV-10.m3u8
@@ -451,7 +451,7 @@ Hebei TV (2160p),https://event.pull.hebtv.com:443/live/live101.m3u8
 黑龙江 (576p),http://183.207.248.71/gitv/live1/G_HEILONGJIANG/G_HEILONGJIANG
 黑龙江卫 (1080p),http://183.207.248.71/cntv/live1/HD-2500k-1080P-heilongjiangstv/HD-2500k-1080P-heilongjiangstv
 
-# === IPTV.MZONE.DPDNS.ORG/ABC123 SOURCE =yyyy==
+# === IPTV.MZONE.DPDNS.ORG/ABC123 SOURCE ===
 咪咕央卫,#genre#
 CCTV1,http://45.192.97.170:8880/play/1.m3u8
 CCTV2,http://45.192.97.170:8880/play/2.m3u8
