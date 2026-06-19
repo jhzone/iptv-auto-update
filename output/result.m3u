@@ -97,10 +97,6 @@ http://183.207.249.12/PLTV/4/224/3221225808/index.m3u8
 http://183.207.248.71/gitv/live1/G_NINGXIA/G_NINGXIA
 #EXTINF:-1 tvg-name="宁夏卫视 (540p)" tvg-id="宁夏卫视",宁夏卫视 (540p)
 http://112.25.48.68/live/program/live/nxws/1300000/mnf.m3u8
-#EXTINF:-1 tvg-name="安徽卫视 (2160p)" tvg-id="安徽卫视",安徽卫视 (2160p)
-http://118.81.195.79:9003/hls/21/index.m3u8
-#EXTINF:-1 tvg-name="安徽卫视 (576p)" tvg-id="安徽卫视",安徽卫视 (576p)
-http://183.207.248.71/gitv/live1/AHWS/AHWS
 #EXTINF:-1 tvg-name="山东卫视 (1080p)" tvg-id="山东卫视",山东卫视 (1080p)
 http://39.134.115.163:8080/PLTV/88888910/224/3221225697/index.m3u8
 #EXTINF:-1 tvg-name="山东卫视 (720p)" tvg-id="山东卫视",山东卫视 (720p)
