@@ -47,6 +47,8 @@ http://74.91.26.218:82/live/cctv15hd.m3u8
 http://74.91.26.218:82/live/cctv16hd.m3u8
 #EXTINF:-1 tvg-name="CCTV-17 (1080p)" tvg-id="CCTV-17",CCTV-17 (1080p)
 http://74.91.26.218:82/live/cctv17hd.m3u8
+#EXTINF:-1 tvg-name="CCTV-1" tvg-id="CCTV-1",CCTV-1
+https://liveplay-srs.voc.com.cn/hls/tv/134_180adf.m3u8
 
 # Group: 💰央视付费频道
 #EXTINF:-1 tvg-name="发现之旅 (576p)" tvg-id="发现之旅",发现之旅 (576p)
@@ -883,3 +885,5 @@ http://223.110.245.161/ott.js.chinamobile.com/PLTV/3/224/3221227492/index.m3u8
 http://183.207.248.71/gitv/live1/G_HEILONGJIANG/G_HEILONGJIANG
 #EXTINF:-1 tvg-name="黑龙江卫 (1080p)" tvg-id="黑龙江卫",黑龙江卫 (1080p)
 http://183.207.248.71/cntv/live1/HD-2500k-1080P-heilongjiangstv/HD-2500k-1080P-heilongjiangstv
+#EXTINF:-1 tvg-name="CGTN (720p)" tvg-id="CGTN",CGTN (720p)
+https://0472.org/hls/cgtn.m3u8
