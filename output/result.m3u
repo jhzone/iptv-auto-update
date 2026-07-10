@@ -895,3 +895,5 @@ http://217.20.112.199:8080/cgtn/index.m3u8
 http://live-play.zxstv.com.cn/zhongxuesheng/zhongxuesheng.m3u8
 #EXTINF:-1 tvg-name="CGTN Spanish (1080p)" tvg-id="CGTNSpanish",CGTN Spanish (1080p)
 http://45.6.4.35/CGTN/index.m3u8
+#EXTINF:-1 tvg-name="Nei Monggol TV (1080i)" tvg-id="NeiMonggolTV",Nei Monggol TV (1080i)
+http://play1-qk.nmtv.cn/live/1769652018126032.m3u8
