@@ -49,6 +49,10 @@ http://74.91.26.218:82/live/cctv15hd.m3u8
 http://74.91.26.218:82/live/cctv16hd.m3u8
 #EXTINF:-1 tvg-name="CCTV-17 (1080p)" tvg-id="CCTV-17",CCTV-17 (1080p)
 http://74.91.26.218:82/live/cctv17hd.m3u8
+#EXTINF:-1 tvg-name="CCTV-6 [Geo-blocked]" tvg-id="CCTV-6[Geo-blocked]",CCTV-6 [Geo-blocked]
+https://live.eac-news.com/CCTV/streams/cctv6.m3u8
+#EXTINF:-1 tvg-name="CCTV-5+" tvg-id="CCTV-5+",CCTV-5+
+https://myip.pdtvhd.com/Sports/streams/CCTV5pul.m3u8
 
 # Group: 💰央视付费频道
 #EXTINF:-1 tvg-name="发现之旅 (576p)" tvg-id="发现之旅",发现之旅 (576p)
@@ -915,3 +919,9 @@ https://liveplus.lzr.com.cn/wlpd/HD/live.m3u8
 https://hls-qhmh.lanzhousobey.cn/qhmh/mhds.m3u8
 #EXTINF:-1 tvg-name="Jiangsu Public & News Channel" tvg-id="JiangsuPublic&NewsChannel",Jiangsu Public & News Channel
 https://jiangning-tv-playing-t.cm.jstv.com/jiangning-tv/jnxwzh.m3u8
+#EXTINF:-1 tvg-name="Anhui TV" tvg-id="AnhuiTV",Anhui TV
+https://restream.pdtvhd.com/memfs/c1cd2ed0-3b2b-4c25-af98-a7fb0b1eb130.m3u8
+#EXTINF:-1 tvg-name="Dragon TV International" tvg-id="DragonTVInternational",Dragon TV International
+https://restream.pdtvhd.com/memfs/0b1b95c9-3543-4af9-9fdb-cf45f1602f17.m3u8
+#EXTINF:-1 tvg-name="Hebei TV" tvg-id="HebeiTV",Hebei TV
+https://restream.pdtvhd.com/memfs/1db8c005-9365-4b32-94a4-3736987b5646.m3u8
