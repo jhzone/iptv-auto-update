@@ -151,8 +151,6 @@ http://118.81.195.79:9003/hls/28/index.m3u8
 http://183.207.248.71/cntv/live1/HD-2500k-1080P-shenzhenstv/HD-2500k-1080P-shenzhenstv
 #EXTINF:-1 tvg-name="湖北卫视 (1080p)" tvg-id="湖北卫视",湖北卫视 (1080p)
 http://118.81.195.79:9003/hls/32/index.m3u8
-#EXTINF:-1 tvg-name="甘肃卫视 (576p)" tvg-id="甘肃卫视",甘肃卫视 (576p)
-http://118.81.195.79:9003/hls/25/index.m3u8
 #EXTINF:-1 tvg-name="西藏卫视 (576p)" tvg-id="西藏卫视",西藏卫视 (576p)
 http://39.134.115.163:8080/PLTV/88888910/224/3221225723/index.m3u8
 #EXTINF:-1 tvg-name="贵州卫视 (576p)" tvg-id="贵州卫视",贵州卫视 (576p)
@@ -883,3 +881,9 @@ http://223.110.245.161/ott.js.chinamobile.com/PLTV/3/224/3221227492/index.m3u8
 http://183.207.248.71/gitv/live1/G_HEILONGJIANG/G_HEILONGJIANG
 #EXTINF:-1 tvg-name="黑龙江卫 (1080p)" tvg-id="黑龙江卫",黑龙江卫 (1080p)
 http://183.207.248.71/cntv/live1/HD-2500k-1080P-heilongjiangstv/HD-2500k-1080P-heilongjiangstv
+#EXTINF:-1 tvg-name="CGTN Global Biz (1080p)" tvg-id="CGTNGlobalBiz",CGTN Global Biz (1080p)
+https://fastlive.cctvplus.com/out/v1/2b3d8a0c805d437f9dc85b764c2ac599/index.m3u8
+#EXTINF:-1 tvg-name="Discovering China (1080p)" tvg-id="DiscoveringChina",Discovering China (1080p)
+https://fastlive.cctvplus.com/out/v1/8442c3bfd4c64a3984389328f6087879/index.m3u8
+#EXTINF:-1 tvg-name="China Travel (1080p)" tvg-id="ChinaTravel",China Travel (1080p)
+https://fastlive.cctvplus.com/out/v1/ca6f9297b7314a63959435028af287fc/index.m3u8
