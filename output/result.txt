@@ -1,5 +1,5 @@
 # 更新时间,#genre#
-2026-08-15 23:24:11,https://iptv.catvod.com/catvod?id=CCTV1%E7%BB%BC%E5%90%88&line=1
+2026-08-16 23:24:03,https://iptv.catvod.com/catvod?id=CCTV1%E7%BB%BC%E5%90%88&line=1
 
 📺央视频道,#genre#
 CCTV-1 (1080p),http://69.30.245.50/live/cctv1.m3u8
@@ -40,7 +40,6 @@ BRTV 北京卫视 (1080p),http://go.bkpcp.top/mg/bjws
 BRTV 北京卫视,http://ivi.bupt.edu.cn/hls/btv1.m3u8
 云南卫视 (1080p),https://hwapi.yunshicloud.com/8xughf/e0bx15.m3u8
 云南卫视 (576p),http://183.207.248.71/cntv/live1/yunnanstv/yunnanstv
-云南卫视 (540p),http://112.25.48.68/live/program/live/ynws/1300000/mnf.m3u8
 兵团卫视 (540p),http://112.25.48.68/live/program/live/btws/1300000/mnf.m3u8
 内蒙古卫视 (576p),http://39.134.115.163:8080/PLTV/88888910/224/3221225667/index.m3u8
 厦门卫视 (576p),http://223.110.245.159/ott.js.chinamobile.com/PLTV/3/224/3221226996/index.m3u8
@@ -202,8 +201,6 @@ Zhejiang TV International,https://ali-m-l.cztv.com/channels/lantian/channel10/10
 京视剧场 (576p),http://223.110.245.143/ott.js.chinamobile.com/PLTV/3/224/3221227040/index.m3u8
 亳州农村 (360p),http://220.180.110.101:8083/videos/live/39/13/o4ncrHkSp7q09/o4ncrHkSp7q09.m3u8
 亳州新聞頻道 (360p),http://220.180.110.101:8083/videos/live/33/59/NC7XQdEveyncq/NC7XQdEveyncq.m3u8
-仙桃新聞綜合 (576p),http://221.233.242.239:280/live/71/playlist.m3u8
-仙桃生活文體 (576p),http://221.233.242.239:280/live/72/playlist.m3u8
 优漫卡通 (576p),http://183.207.249.15/PLTV/4/224/3221225933/index.m3u8
 优漫卡通 (576p),http://223.110.243.171/PLTV/3/224/3221226982/index.m3u8
 余姚姚江文化 (576p),https://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8
