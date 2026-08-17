@@ -379,8 +379,6 @@ http://33809.hlsplay.aodianyun.com/guangdianyun_33809/tv_channel_171.m3u8
 http://tvdrs.wsrtv.com.cn:8100/channellive/ch1.flv
 #EXTINF:-1 tvg-name="五星体育 (720p)" tvg-id="五星体育",五星体育 (720p)
 http://223.110.245.147/ott.js.chinamobile.com/PLTV/3/224/3221226799/index.m3u8
-#EXTINF:-1 tvg-name="亚太台 (480p)" tvg-id="亚太台",亚太台 (480p)
-http://174.127.67.246/live330/playlist.m3u8
 #EXTINF:-1 tvg-name="交城電視台 (576p)" tvg-id="交城電視台",交城電視台 (576p)
 http://sxjc.chinashadt.com:2036/live/stream:jctv.stream/playlist.m3u8
 #EXTINF:-1 tvg-name="京视剧场 (576p)" tvg-id="京视剧场",京视剧场 (576p)
@@ -437,10 +435,6 @@ https://live.nbs.cn/channels/njtv/jkpd/m3u8:500k/live.m3u8
 http://183.207.248.71/gitv/live1/G_NJJK/G_NJJK
 #EXTINF:-1 tvg-name="南京教科 (576p)" tvg-id="南京教科",南京教科 (576p)
 http://223.110.245.155/ott.js.chinamobile.com/PLTV/3/224/3221227194/index.m3u8
-#EXTINF:-1 tvg-name="南川新闻综合 (360p)" tvg-id="南川新闻综合",南川新闻综合 (360p)
-http://221.5.213.4:30000/1111.m3u8
-#EXTINF:-1 tvg-name="南川旅游经济 (360p)" tvg-id="南川旅游经济",南川旅游经济 (360p)
-http://221.5.213.4:30000/2222.m3u8
 #EXTINF:-1 tvg-name="南阳新闻 (1080p)" tvg-id="南阳新闻",南阳新闻 (1080p)
 http://30539.hlsplay.aodianyun.com/lms_30539/tv_channel_142.m3u8
 #EXTINF:-1 tvg-name="南陽科教頻道 (1080p)" tvg-id="南陽科教頻道",南陽科教頻道 (1080p)

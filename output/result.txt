@@ -1,5 +1,5 @@
 # 更新时间,#genre#
-2026-08-16 23:24:03,https://iptv.catvod.com/catvod?id=CCTV1%E7%BB%BC%E5%90%88&line=1
+2026-08-17 23:26:52,https://iptv.catvod.com/catvod?id=CCTV1%E7%BB%BC%E5%90%88&line=1
 
 📺央视频道,#genre#
 CCTV-1 (1080p),http://69.30.245.50/live/cctv1.m3u8
@@ -196,7 +196,6 @@ Zhejiang TV International,https://ali-m-l.cztv.com/channels/lantian/channel10/10
 乐清生活 [Geo-blocked],http://33809.hlsplay.aodianyun.com/guangdianyun_33809/tv_channel_171.m3u8
 云南 Ⅰ 文山综合台 (1080p),http://tvdrs.wsrtv.com.cn:8100/channellive/ch1.flv
 五星体育 (720p),http://223.110.245.147/ott.js.chinamobile.com/PLTV/3/224/3221226799/index.m3u8
-亚太台 (480p),http://174.127.67.246/live330/playlist.m3u8
 交城電視台 (576p),http://sxjc.chinashadt.com:2036/live/stream:jctv.stream/playlist.m3u8
 京视剧场 (576p),http://223.110.245.143/ott.js.chinamobile.com/PLTV/3/224/3221227040/index.m3u8
 亳州农村 (360p),http://220.180.110.101:8083/videos/live/39/13/o4ncrHkSp7q09/o4ncrHkSp7q09.m3u8
@@ -225,8 +224,6 @@ Zhejiang TV International,https://ali-m-l.cztv.com/channels/lantian/channel10/10
 南京教科 (720p),https://live.nbs.cn/channels/njtv/jkpd/m3u8:500k/live.m3u8
 南京教科 (576p),http://183.207.248.71/gitv/live1/G_NJJK/G_NJJK
 南京教科 (576p),http://223.110.245.155/ott.js.chinamobile.com/PLTV/3/224/3221227194/index.m3u8
-南川新闻综合 (360p),http://221.5.213.4:30000/1111.m3u8
-南川旅游经济 (360p),http://221.5.213.4:30000/2222.m3u8
 南阳新闻 (1080p),http://30539.hlsplay.aodianyun.com/lms_30539/tv_channel_142.m3u8
 南陽科教頻道 (1080p),http://30539.hlsplay.aodianyun.com/lms_30539/tv_channel_296.m3u8
 吉州新聞綜合 (1080p),http://218.204.153.158/10.m3u8
