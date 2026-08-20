@@ -1,5 +1,5 @@
 # 更新时间,#genre#
-2026-08-19 23:26:29,https://iptv.catvod.com/catvod?id=CCTV1%E7%BB%BC%E5%90%88&line=1
+2026-08-20 23:29:28,https://iptv.catvod.com/catvod?id=CCTV1%E7%BB%BC%E5%90%88&line=1
 
 📺央视频道,#genre#
 CCTV-1 (1080p),http://69.30.245.50/live/cctv1.m3u8
@@ -221,7 +221,6 @@ Zhejiang TV International,https://ali-m-l.cztv.com/channels/lantian/channel10/10
 南京十八 (576p),http://183.207.248.71/gitv/live1/G_NJSB/G_NJSB
 南京少儿 (720p),https://live.nbs.cn/channels/njtv/sepd/m3u8:500k/live.m3u8
 南京教科 (720p),https://live.nbs.cn/channels/njtv/jkpd/m3u8:500k/live.m3u8
-南京教科 (576p),http://183.207.248.71/gitv/live1/G_NJJK/G_NJJK
 南京教科 (576p),http://223.110.245.155/ott.js.chinamobile.com/PLTV/3/224/3221227194/index.m3u8
 南阳新闻 (1080p),http://30539.hlsplay.aodianyun.com/lms_30539/tv_channel_142.m3u8
 南陽科教頻道 (1080p),http://30539.hlsplay.aodianyun.com/lms_30539/tv_channel_296.m3u8
