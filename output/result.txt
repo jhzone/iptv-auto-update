@@ -1,5 +1,5 @@
 # 更新时间,#genre#
-2026-09-02 00:54:52,https://iptv.catvod.com/catvod?id=CCTV1%E7%BB%BC%E5%90%88&line=1
+2026-09-03 01:01:06,https://iptv.catvod.com/catvod?id=CCTV1%E7%BB%BC%E5%90%88&line=1
 
 📺央视频道,#genre#
 CCTV-1 (1080p),http://69.30.245.50/live/cctv1.m3u8
@@ -424,4 +424,5 @@ QTV-3,http://119.166.53.110:85/tsfile/live/1002_1.m3u8?key=txiptv&playlive=1&aut
 QTV-4,http://119.166.53.110:85/tsfile/live/1004_1.m3u8?key=txiptv&playlive=1&authid=0
 CGTN (1080p),https://hlspackager.akamaized.net/live/DB/CGTN_ENGLISH/HLS/CGTN_ENGLISH.m3u8
 CGTN Documentary (1080p),https://hlspackager.akamaized.net/live/DB/CGTN_DOCUMENTARY/HLS/CGTN_DOCUMENTARY.m3u8
+CGTN (720p),https://dai.google.com/linear/hls/event/r4sa-f6GSN2XIvzKv5jVng/master.m3u8
 
