@@ -837,3 +837,5 @@ https://hlspackager.akamaized.net/live/DB/CGTN_ENGLISH/HLS/CGTN_ENGLISH.m3u8
 https://hlspackager.akamaized.net/live/DB/CGTN_DOCUMENTARY/HLS/CGTN_DOCUMENTARY.m3u8
 #EXTINF:-1 tvg-name="CGTN (720p)" tvg-id="CGTN",CGTN (720p)
 https://dai.google.com/linear/hls/event/r4sa-f6GSN2XIvzKv5jVng/master.m3u8
+#EXTINF:-1 tvg-name="Chuxiong News Channel" tvg-id="ChuxiongNewsChannel",Chuxiong News Channel
+http://hwapi.yntv.net/ew265l/848y54.m3u8
