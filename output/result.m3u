@@ -839,3 +839,7 @@ https://hlspackager.akamaized.net/live/DB/CGTN_DOCUMENTARY/HLS/CGTN_DOCUMENTARY.
 https://dai.google.com/linear/hls/event/r4sa-f6GSN2XIvzKv5jVng/master.m3u8
 #EXTINF:-1 tvg-name="Chuxiong News Channel" tvg-id="ChuxiongNewsChannel",Chuxiong News Channel
 http://hwapi.yntv.net/ew265l/848y54.m3u8
+#EXTINF:-1 tvg-name="CGTN Spanish (576p)" tvg-id="CGTNSpanish",CGTN Spanish (576p)
+http://45.186.106.147:8880/play/a06f/index.m3u8
+#EXTINF:-1 tvg-name="Chaozhou Public Channel" tvg-id="ChaozhouPublicChannel",Chaozhou Public Channel
+http://113.64.146.48:1688/hls/4/index.m3u8
