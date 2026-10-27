@@ -1,5 +1,5 @@
 # 更新时间,#genre#
-2026-10-26 01:03:31,https://iptv.catvod.com/catvod?id=CCTV1%E7%BB%BC%E5%90%88&line=1
+2026-10-27 01:55:01,https://iptv.catvod.com/catvod?id=CCTV1%E7%BB%BC%E5%90%88&line=1
 
 📺央视频道,#genre#
 CCTV-1 (1080p),http://69.30.245.50/live/cctv1.m3u8
@@ -26,6 +26,7 @@ CCTV-14 (1080p),http://74.91.26.218:82/live/cctv14hd.m3u8
 CCTV-15 (720p),http://74.91.26.218:82/live/cctv15hd.m3u8
 CCTV-16 (1080p),http://74.91.26.218:82/live/cctv16hd.m3u8
 CCTV-17 (1080p),http://74.91.26.218:82/live/cctv17hd.m3u8
+CCTV-5+ (1080p),https://php.jdshipin.com/TVOD/iptv.php?id=cctv5p
 
 💰央视付费频道,#genre#
 发现之旅 (576p),http://125.210.152.18:9090/live/FXZL_750.m3u8
