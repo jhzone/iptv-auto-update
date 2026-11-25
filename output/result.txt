@@ -1,5 +1,5 @@
 # 更新时间,#genre#
-2026-11-24 06:51:28,https://iptv.catvod.com/catvod?id=CCTV1%E7%BB%BC%E5%90%88&line=1
+2026-11-25 05:17:36,https://iptv.catvod.com/catvod?id=CCTV1%E7%BB%BC%E5%90%88&line=1
 
 📺央视频道,#genre#
 CCTV-1 (1080p),http://69.30.245.50/live/cctv1.m3u8
@@ -8,6 +8,7 @@ CCTV-1,https://liveplay-srs.voc.com.cn/hls/tv/134_180adf.m3u8
 CCTV-2 (720p),http://74.91.26.218:82/live/cctv2hd.m3u8
 CCTV-3 (720p),http://74.91.26.218:82/live/cctv3hd.m3u8
 CCTV-4 Asia (720p),http://74.91.26.218:82/live/cctv4hd.m3u8
+CCTV-4 Europe,https://r.eu.cdn-redge.media/livehls/oeu/mt/live/cctv_4/live.livx/playlist.m3u8
 CCTV-4K (1080p),http://198.204.240.250:82/live/cctv4k.m3u8
 CCTV-5+ (1080p),https://php.jdshipin.com/TVOD/iptv.php?id=cctv5p
 CCTV-5+,https://myip.pdtvhd.com/Sports/streams/CCTV5pul.m3u8
